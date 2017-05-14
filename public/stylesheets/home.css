@@ -32,14 +32,11 @@ main {
 	margin-left: 10%;
 }
 
-.give-header-container:hover {
-	background-color: cadetblue;
-	color: #FFF;
-	border-bottom: 1px solid #2a2a2a;
-}
-
 .give-header-container{
 	padding-bottom: 10px;
+	background-color: rgba(34, 37, 37, 0.78);
+	color: #FFF;
+	border-bottom: 1px solid #2a2a2a;
 }
 
 .give-navigation a {
@@ -59,6 +56,7 @@ main {
     background-position: 0 0;
     background-size: cover;
     display: inline-block;
+    background-color: rgba(255, 255, 255, 0.59);
 }
 
 .give-icon-text {
@@ -75,6 +73,7 @@ main {
     text-transform: uppercase;
     margin-top: 3px;
     color: #FFF;
+    border: 1px solid #FFF;
 }
 
 .give-menu {
@@ -137,53 +136,198 @@ main {
 }
 
 .give-about-explorebutton {
-    padding: 10px 15px;
-    background-color: rgba(0,0,0,0.5);
+    padding: 13px 30px;
+    background-color: rgba(236, 28, 36, 0.79);
     color: #FFF;
+    font-size: 1.25em;
     cursor: pointer;
+    word-spacing: normal;
 }
 
 footer {
     width: 100%;
-    padding: 2% 5%;
+ 	padding: 2% 0;
     margin-top: 50px;
-    background-color: black;
-    color: #FFF;
+    background-color: #333333;
+    color: #b0b2b3;
 }
 
-.give-nav-ul {
-    width: 200px;
+.give-footer-ul {
     display: inline-block;
     vertical-align: top;
-    padding-right: 4%;
+    width: 27%;
+    padding: 2% 0.5%;
+    border-right: 1px solid #b0b2b3;
+    height: 169px;
 }
 
-.give-footer-header a, .give-footer-list a {
-    color: inherit;
-    text-decoration: none;
+.give-footer-li {
+	list-style-type: none;
+    height: 30px;
+    line-height: 25px;
 }
 
-.give-footer-header, .give-footer-list {
-    list-style-type: none;
-    padding: 6px 0;
+.give-footer-list-header {
+    font-size: 20px;
+    padding-bottom: 10px;
 }
 
-.give-footer-list {
-    font-style: oblique;
+.give-footer-input {
+    height: 39px;
 }
 
-.give-footer-header {
-    border-bottom: 1px solid grey;
-    font-size: 1.25em;
-    color: cornflowerblue;
+.give-footer-input input {
+    height: 39px;
+    width: 63%;
+    padding: 0;
+    border: none;
+    background-color: #525252;
+    float: left;
+    padding-left: 15px;
+    font-size: 17px;
+}
+
+.give-enter-email {
+	height: 39px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 39px;
+    width: 10%;
+    font-size: 30px;
+    background-color: blanchedalmond;
+    float: left;
+    padding-left: 8px;
+    background: url(../images/paper-plane.png) #b0b2b3 no-repeat 10px 8px;
+}
+
+.give-footer-firstchild {
+    padding-left: 15%;
+}
+
+.give-footer-story {
+	height: auto;
+}
+
+.give-page-index {
+    width: 48%;
+    display: inline-block;
+}
+
+.give-page-index a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.give-page-index a:hover {
+	color: #30bbbf;
+	text-decoration: underline;
+}
+
+.give-footer-ul:last-of-type {
+    border-right: none;
+}
+
+.give-whatwedo {
+    height: 375px;
+    background-color: #00a7e1;
+    padding: 2%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.give-whatwedo-header, .give-join-header {
+    font-size: 4em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.give-promoteeducation {
+    margin-top: 50px;
+}
+
+.give-whatwedo-list {
+	display: inline-block;
+    width: 20%;
+    padding: 1%;
+    border-right: 1px solid black;
+}
+
+.give-whatwedo-list li {
+	list-style-type: none;
+}
+
+.give-whatwedo-lih {
+	font-size: 1.5em;
+    color: rgba(98, 64, 127, 0.75);
+    line-height: 1.7em;
+}
+
+.give-whatwedo-list:last-of-type {
+    border: none;
+}
+
+.give-whatwedo-lid {
+    color: #b2e4f6;
+    line-height: 1.4em;
+    font-size: 1em;
+    text-transform: capitalize;
+}
+
+.orange-hyperlinks {
+	color: rgb(212, 201, 41);
+}
+
+.give-wwd-readmore{
+	padding-top: 4%; 
+	font-size: 1.2em;
+    font-family: proxima-nova, sans-serif;
     font-weight: 600;
-    font-variant: small-caps;
+    color: rgb(179, 229, 246);
 }
 
-.give-nav-container {
-	text-align: center;
+.give-join {
+    margin-top: 50px;
+    height: 400px;
+    background-color: bisque;
+    background-image: url("../images/wj.jpg");
+    text-align: center;
+    color: #FFF;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 32%;
 }
 
+.give-join-header {
+    padding-top: 42px;
+}
+
+.give-join-action {
+    padding: 10px 30px;    
+    font-weight: 600;
+    font-family: serif;
+    color: #FFF;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.give-join-donate {
+    background-color: #4CAF50;
+}
+
+.give-join-otherways {
+    background-color: #e0890d;
+}
+
+.give-join-summary {
+    font-size: 1.25em;
+    width: 20%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.give-join-actioncontainer {
+    padding-top: 50px;
+}
+    
 @media only screen and (max-width: 800px) {
 	.give-menu {
 		display: block;
@@ -242,27 +386,31 @@ footer {
 }
 
 #slide-0 {
+    color: #ced3d6;
 	background-color: red; 
-	background-image: url("../images/slide-1.jpg");
+	background-image: url("../images/childresn.jpg");
 }
 
 #slide-1 {
 	background-color: rebeccapurple; 
-	background-image: url("../images/slide-2.jpg");
+	background-image: url("../images/Magazine.jpg");
 }
 
 #slide-2 {
+    color: rgba(241, 236, 236, 0.82);
 	background-color: orange; 
-	background-image: url("../images/slide-3.jpg");
+	background-image: url("../images/hope.jpg");
 }
 
 #slide-3 {
 	background-color: blue; 
-	background-image: url("../images/slide-4.jpg");
+	background-image: url("../images/Education.jpg");
+    color: rgba(88, 154, 88, 0.66);
 }
 #slide-4 {
 	background-color: green; 
-	background-image: url("../images/slide-5.jpg");
+	background-image: url("../images/handstogether.jpg");
+    color: rgba(0, 167, 225, 0.65);
 }
 
 .give-active-slider {
@@ -271,11 +419,13 @@ footer {
 
 .give-slider-left, .give-slider-right {
     width: 40px;
-    height: 34px;
+    height: 80px;
     position: absolute;
     top: 45%;
-    background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(176, 178, 179, 0.51);
 }
 
 .give-slider-left:hover, .give-slider-right:hover {
@@ -290,17 +440,26 @@ footer {
     text-align: center;
     width: 70%;
     margin-left: 20%;
-    color: #FFF;
+    /*color: #FFF;*/
     font-weight: 600;
 }
     
 
 .give-slider-left {
 	left: 0;
+	border-bottom-right-radius: 80px;
+	border-top-right-radius: 80px;
+	background-image: url("../images/prev.svg");
+	background-position: -1px 23px;
+
 }
 
 .give-slider-right {
 	right: 0;
+	border-bottom-left-radius: 80px;
+	border-top-left-radius: 80px;
+	background-image: url("../images/next.svg");
+	background-position: 2px 23px;
 }
 
 @keyframes slider-animation {
