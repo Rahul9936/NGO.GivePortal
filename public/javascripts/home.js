@@ -25,10 +25,11 @@ var slider = (function(oSlider) {
 			slides.classList.remove("give-active-slider");
 			el.classList.add("give-active-slider");
 		
-		}, 3000);
+		}, 5000);
 	};
 
 	oSlider.nextPage = function () {
+		console.log("next");
 		oSlider.currentPage = (oSlider.currentPage + 1) % oSlider.maxPage;
 	
 		var el = document.querySelector("#slide-" + oSlider.currentPage);
@@ -39,6 +40,7 @@ var slider = (function(oSlider) {
 	};
 
 	oSlider.prevPage = function () {
+		console.log("prev");
 		oSlider.currentPage -= 1;
 		if(oSlider.currentPage === -1){
 			oSlider.currentPage = oSlider.maxPage - 1;
@@ -64,11 +66,11 @@ window.onload = function () {
 	// set next page slide event
 	var next = document.querySelector(".give-slider-left");
 	next.onclick = function() {
-		slider.nextPage();
+		slider.prevPage();
 	}
 
 	var prev = document.querySelector(".give-slider-right");
 	prev.onclick = function(){
-		slider.prevPage();
+		slider.nextPage();
 	}
 };
